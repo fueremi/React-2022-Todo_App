@@ -12,7 +12,12 @@ const TodosComponent = ({ todos, deleteTodo }) => {
   ) : (
     <p className="center">You have no todo's left, Yay!</p>
   );
-  return <div className="todos collection">{todoList}</div>;
+  return (
+    <>
+      <small>Double click to delete todo</small>
+      <div className="todos collection">{todoList}</div>
+    </>
+  );
 };
 
 export default TodosComponent;
